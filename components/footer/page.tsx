@@ -25,7 +25,7 @@ export default function FooterComponent() {
                 <IconMapPinShare />
               </div>
               <div>
-                <h5 className="font-bold">Office Location</h5>
+                <h5 className="font-700">Office Location</h5>
                 <p>Location needed</p>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function FooterComponent() {
                 <IconPhone />
               </div>
               <div>
-                <h5 className="font-bold">Get a quote</h5>
+                <h5 className="font-700">Get a quote</h5>
                 <p>+91 00000 00000</p>
                 <p>+91 00000 00000</p>
               </div>
@@ -46,7 +46,7 @@ export default function FooterComponent() {
                 <IconClockHour1 />
               </div>
               <div>
-                <h5 className="font-bold">Working Time</h5>
+                <h5 className="font-700">Working Time</h5>
                 <p>Mon - Sat: 8:00 AM - 7:00 PM</p>
                 <p>Sunday Close</p>
               </div>
@@ -54,7 +54,7 @@ export default function FooterComponent() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 py-6 md:py-10 lg:py-14 xl:py-24">
             <div>
-              {/* <MainLogo className="max-w-[200px]" /> */}
+              <MainLogo className="max-w-[200px]" />
               <p className="md:mt-3">Leading Quartz Stone Expert.</p>
               <p className="mt-1.5 md:mt-3 hover:bg-primary border border-gray-border rounded-md w-fit p-2 flex justify-center md:justify-start items-center space-x-2">
                 <IconMail />{" "}

@@ -9,7 +9,7 @@ const FullScreenLoader = () => {
           width="400"
           alt="logo"
           className="transform scale-90"
-          src="/images/fullpagelogo.png-" />
+          src="/images/fullpagelogo.png" />
       </div>
     </div>
   );
