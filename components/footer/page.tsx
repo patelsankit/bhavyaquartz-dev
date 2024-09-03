@@ -55,7 +55,7 @@ export default function FooterComponent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 py-6 md:py-10 lg:py-14 xl:py-24">
             <div>
               <MainLogo className="max-w-[200px]" />
-              <p className="md:mt-3">Leading Quartz Stone Expert.</p>
+              <p className="mt-1.5 md:mt-3">Leading Quartz Stone Expert.</p>
               <p className="mt-1.5 md:mt-3 hover:bg-primary border border-gray-border rounded-md w-fit p-2 flex justify-center md:justify-start items-center space-x-2">
                 <IconMail />{" "}
                 <Link href="mailto:abc@gmail.com">quartz@gmail.com</Link>
