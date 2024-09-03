@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from "react";
 
 interface CounterProps {
   endValue: number;
@@ -57,7 +57,7 @@ export default function Counter({ endValue, duration }: CounterProps) {
   }, [isVisible, endValue, duration]);
 
   return (
-    <div ref={counterRef} className="text-4xl font-bold text-center">
+    <div ref={counterRef} className="text-36 font-600 text-center">
       {count}+
     </div>
   );
