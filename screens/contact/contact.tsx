@@ -12,16 +12,18 @@ export default function Contact() {
     email: "",
     message: "",
     number: "",
+    city: "",
+    state: "",
   });
 
-  const { name, email, message, number } = formData;
+  const { name, email, message, number, city, state } = formData;
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (event :any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
 
     // Check if all fields are filled
@@ -29,7 +31,9 @@ export default function Contact() {
       name.trim() === "" ||
       email.trim() === "" ||
       message.trim() === "" ||
-      number.trim() === ""
+      number.trim() === "" ||
+      city.trim() === "" ||
+      state.trim() === ""
     ) {
       toast.error("Please fill in all fields");
       return;
@@ -70,6 +74,8 @@ export default function Contact() {
           email: "",
           message: "",
           number: "",
+          city: "",
+          state: "",
         });
       } else {
         toast.error("Email not sent");
@@ -82,12 +88,11 @@ export default function Contact() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="w-full px-5 max-w-[450px] grid gap-3 mx-auto"
+        className="w-1/2  max-w-[450px] grid gap-3 mx-auto"
       >
-        <h2 className="text-center w-full capitalize text-2xl">contact form</h2>
         <Input
           type="text"
-          label="Name"
+          label="Full Name"
           name="name"
           value={name}
           onChange={handleChange}
@@ -102,10 +107,26 @@ export default function Contact() {
           required
         />
         <Input
-          type="text"
-          label="Number"
+          type="number"
+          label="Phone Number *"
           name="number"
           value={number}
+          onChange={handleChange}
+          required
+        />
+        <Input
+          type="text"
+          label="City"
+          name="city"
+          value={city}
+          onChange={handleChange}
+          required
+        />
+        <Input
+          type="text"
+          label="State"
+          name="state"
+          value={state}
           onChange={handleChange}
           required
         />
