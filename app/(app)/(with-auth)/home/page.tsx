@@ -13,8 +13,8 @@ import Banner from "./Banner";
 import SectionTwo from "./SectionTwo";
 import { SectionThree } from "./SectionThree";
 import TechnologySection from "./TechnologySection";
-import { CertifiedCompany } from "./ CertifiedCompany";
-import { OurCollection } from "./ OurCollection";
+import { CertifiedCompany } from "./CertifiedCompany";
+import { OurCollection } from "./OurCollection";
 import AboutusSection from "./AboutusSection";
 
 const HomePage = () => {
