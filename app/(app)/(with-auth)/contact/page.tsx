@@ -1,16 +1,12 @@
-import ContectUs from "@/components/contect-us/contect-us";
-import Contact from "@/screens/contact/contact";
+import ContactUs from "@/components/contact-us/contact-us";
 import React from "react";
 
-const Contactpage = () => {
+const ContactUsPage = () => {
   return (
-    // <div className="py-10">
-    //   <Contact />
-    // </div>
-    <div>
-      <ContectUs />
+    <div className="py-5 sm:py-10">
+      <ContactUs />
     </div>
   );
 };
 
-export default Contactpage;
+export default ContactUsPage;

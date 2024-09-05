@@ -27,8 +27,8 @@ export default function Layout({ children }: any) {
       <NextUIProvider>
         <NextThemesProvider attribute="class" defaultTheme="light">
           <Toaster position="top-right" reverseOrder={false} />
-          <Link
-            className="fixed bottom-4 right-4 md:hidden z-[999]"
+          {/* <Link
+            className="fixed bottom-4 right-4 lg:hidden z-[999]"
             target="_blank"
             href="https://wa.me/917202900299?text=Hello I Have Tiles Related Inquiry!"
           >
@@ -37,18 +37,18 @@ export default function Layout({ children }: any) {
               src="images/whatsapp-svgrepo-com.svg"
               alt="image"
             />
-          </Link>
+          </Link> */}
           <CustomCursor />
-          {loading ? (
+          {/* {loading ? (
             <FullScreenLoader />
-          ) : (
+          ) : ( */}
             <>
               <NavbarComponent />
               {children}
               <FooterComponent />
               <GotoTop />
             </>
-          )}
+          {/* )} */}
         </NextThemesProvider>
       </NextUIProvider>
     </>

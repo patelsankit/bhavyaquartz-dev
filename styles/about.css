@@ -1,0 +1,235 @@
+:root {
+  --bhavya-font: "Roboto", sans-serif;
+  --bhavya-font-two: "Inter Tight", sans-serif;
+  --bhavya-gray: #414651;
+  --bhavya-gray-rgb: 65, 70, 81;
+  --bhavya-white: #ffffff;
+  --bhavya-white-rgb: 255, 255, 255;
+  --bhavya-base: #003e64;
+  --bhavya-base-rgb: 245, 37, 73;
+  --bhavya-black: #0d121e;
+  --bhavya-black-rgb: 13, 18, 30;
+  --bhavya-primary: #f7f9fa;
+  --bhavya-primary-rgb: 247, 249, 250;
+  --bhavya-bdr-radius: 10px;
+}
+.about-three {
+  position: relative;
+  display: block;
+  padding: 0 0 150px;
+  z-index: 1;
+}
+
+.about-three__shape-3 {
+  position: absolute;
+  top: -12px;
+  right: 298px;
+  z-index: -1;
+}
+
+.about-three__shape-3 img {
+  width: auto;
+}
+
+.about-three__shape-4 {
+  position: absolute;
+  bottom: 170px;
+  right: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.about-three__shape-4 img {
+  width: auto;
+}
+
+.about-three__shape-5 {
+  position: absolute;
+  top: -348px;
+  right: 0;
+  z-index: -1;
+}
+
+.about-three__shape-5 img {
+  width: auto;
+}
+
+.about-three__left {
+  position: relative;
+  display: block;
+  margin-right: 86px;
+}
+
+.about-three__img {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.about-three__img img {
+  width: 100%;
+}
+
+.about-three__experience {
+  position: absolute;
+  bottom: 19px;
+  right: -30px;
+  max-width: 200px;
+  width: 100%;
+  background-color: var(--bhavya-base);
+  text-align: center;
+  padding: 24px 20px 24px;
+}
+
+.about-three__experience-count {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-three__experience-count h3 {
+  color: var(--bhavya-white);
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.section-title-three__title {
+  margin: 0;
+  color: var(--bixola-black);
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-top: 11px;
+  font-family: var(--bixola-font-two);
+  text-transform: capitalize;
+}
+.about-three__experience-count span {
+  color: var(--bhavya-white);
+
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 56px;
+  position: relative;
+  top: -11px;
+}
+
+.about-three__experience-text {
+  color: var(--bhavya-white);
+  font-family: var(--bhavya-font-two);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.about-three__shape-1 {
+  position: absolute;
+  top: -54px;
+  left: 19px;
+  z-index: 1;
+}
+
+.about-three__shape-1 img {
+  width: auto;
+}
+
+.about-three__shape-2 {
+  position: absolute;
+  bottom: -75px;
+  left: -133px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.about-three__shape-2 img {
+  width: auto;
+}
+
+.about-three__right {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+.about-three__right .section-title-three {
+  margin-bottom: 30px;
+}
+
+.about-three__text-1 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--bhavya-black);
+  padding-left: 15px;
+}
+
+.about-three__text-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--bhavya-base);
+}
+
+.about-three__text-2 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.about-three__points {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.about-three__points li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.about-three__points li + li {
+  margin-left: 58px;
+}
+
+.about-three__points-count {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--bhavya-base);
+  border-radius: 50%;
+}
+
+.about-three__points-count h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+
+  color: var(--bhavya-white);
+}
+
+.about-three__points-count span {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+
+  color: var(--bhavya-white);
+}
+
+.about-three__points-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--bhavya-black);
+  margin-left: 17px;
+}

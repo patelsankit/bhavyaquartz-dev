@@ -7,10 +7,10 @@
 /* @import "../styles/swal.css"; */
 @import "../styles/table.css";
 @import "../styles/fullpageLoader.css";
+@import "../styles/about.css";
 /* @import "../styles/socket-io.css"; */
 /* @import "../styles/datepicker.css"; */
 @tailwind utilities;
-
 
 @layer base {
   :root {

@@ -28,12 +28,12 @@ const GotoTop = () => {
 
   return (
     <div
-      className={`fixed bottom-[60px] md:bottom-4 right-4 transition-opacity duration-500 ${
+      className={`z-20 fixed bottom-10 md:bottom-4 right-4 transition-opacity duration-500 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
       <Button
-        className="hover:!bg-[#0E73A7] bg-grad-100 p-1 md:p-3 rounded-full shadow-md text-white min-w-[40px] h-[40px] md:min-w-[55px] md:h-[55px]"
+        className="hover:!bg-[#0E73A7] bg-grad-100 p-1 md:p-3 rounded-full shadow-md text-white min-w-[45px] h-[45px] md:min-w-[55px] md:h-[55px]"
         onClick={scrollToTop}
         variant="flat"
       >
