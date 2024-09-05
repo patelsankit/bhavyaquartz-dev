@@ -22,11 +22,20 @@ export default function FooterComponent() {
           <div className="border-b pb-5 md:pb-10 lg:pb-16 border-gray-border grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
             <div className="flex items-start space-x-3 lg:space-x-6">
               <div className="bg-[#344152] p-2 rounded hover:bg-primary transition-all hover:scale-105">
+                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
                 <IconMapPinShare />
+                </Link>
               </div>
               <div>
-                <h5 className="font-700">Office Location</h5>
-                <p>Location needed</p>
+                <h5 className="font-700">
+                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
+                  Office Location
+                </Link></h5>
+                <p>
+                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
+                  Vakaner-Morbi Highway,<br />Behind Shriji Polymers,<br />GIDC, Vakaner
+                  </Link>
+                  </p>
               </div>
             </div>
 
@@ -36,8 +45,7 @@ export default function FooterComponent() {
               </div>
               <div>
                 <h5 className="font-700">Get a quote</h5>
-                <p>+91 00000 00000</p>
-                <p>+91 00000 00000</p>
+                <p>+91 63537 57842</p>
               </div>
             </div>
 

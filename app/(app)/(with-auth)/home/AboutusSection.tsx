@@ -3,7 +3,7 @@ import React from "react";
 const AboutusSection = () => {
   return (
     <>
-      <section className="about-three relative overflow-hidden py-32">
+      <section className="about-three relative overflow-hidden py-12 sm:py-20 lg:py-32">
         <div className="about-three__shape-5">
           <img src="images/about-three-shape-5.png" alt="image" />
         </div>
@@ -14,9 +14,9 @@ const AboutusSection = () => {
           <img src="images/about-three-shape-4.png" alt="image" />
         </div>
         <div className="container">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4">
             <div>
-              <div className="about-three__left">
+              <div className="about-three__left !mr-0 lg:!mr-[86px]">
                 <div className="about-three__img wow slideInLeft animated">
                   <img src="images/ABOUT_US.jpg" alt="image" />
                   <div className="about-three__experience hidden">

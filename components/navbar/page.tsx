@@ -75,7 +75,7 @@ export default function NavbarComponent() {
         <Link href="/">
           <NavbarBrand>
             <Image
-              src="/images/logo.svg-"
+              src="/images/logo.svg"
               height="100"
               width="100"
               className="w-[140px]"
@@ -98,7 +98,7 @@ export default function NavbarComponent() {
           <Link href="/">
             <NavbarBrand>
               <Image
-                src="/images/logo.svg-"
+                src="/images/logo.svg"
                 height="100"
                 width="150"
                 className=""

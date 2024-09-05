@@ -2,7 +2,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function SectionThree() {
   return (
-    <div className="bg-muted lg:py-20">
+    <div className="bg-muted lg:py-20 px-1 sm:px-3">
       <div className="container">
         <HoverEffect className="text-black" items={projects} />
       </div>
