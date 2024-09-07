@@ -10,6 +10,7 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
+import Banner from "@/components/Page-Banner/page";
 
 const columns = [
   { key: "id", label: "ID" },
@@ -181,7 +182,11 @@ const rows = [
 const TechnicalSpecification = () => {
   return (
     <section className="py-12 bg-gray-100">
-      <div className="px-4 container">
+      <Banner
+        title="TECHNICAL SPECIFICATION"
+        imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
+      />
+      <div className="px-4 pt-7 container">
         <div className="text-center mb-10">
           <h2 className="h2-title text-center mb-2 text-blue-600 uppercase">
             Specification

@@ -1,32 +1,39 @@
 import Contact from "@/screens/contact/contact";
 import { CardBody, CardContainer } from "../ui/3d-card";
+import Banner from "../Page-Banner/page";
+import {
+  IconBrandHipchat,
+  IconBuilding,
+  IconMail,
+  IconPhone,
+} from "@tabler/icons-react";
 
 export default function ContactUs() {
   const steps = [
     {
       id: 1,
-      img: " img or svg 01",
+      icon: <IconBrandHipchat className="text-48 text-primary mb-4" />,
       title: "WhatsApp Chat",
       description: "Available 24/7",
       URl: "#",
     },
     {
       id: 2,
-      img: "img or svg  02",
+      icon: <IconPhone className="text-48 font-700 text-primary mb-4" />,
       title: "Call Us",
       description: "+91 72029 00299 , +91 70966 64834",
       URl: "#",
     },
     {
       id: 3,
-      img: "img or svg  03",
+      icon: <IconMail className="text-48 font-700 text-primary mb-4" />,
       title: "Mail Us",
       description: "info@bhavyaquartz.com",
       URl: "#",
     },
     {
       id: 4,
-      img: "img or svg  04",
+      icon: <IconBuilding className="text-48 font-700 text-primary mb-4" />,
       title: "Office Address",
       description: "Morbi,Gujrat",
       URl: "#",
@@ -35,18 +42,10 @@ export default function ContactUs() {
 
   return (
     <section className="">
-      <div className="relative ">
-        <div className="absolute top-0 h-full w-full bg-black/70 flex items-center justify-center">
-          <h1 className="contact-us-banner-title !font-700 text-white !text-40 sm:!text-[56px]">
-            GET IN TOUCH
-          </h1>
-        </div>
-        <img
-          className="max-h-[calc(100vh-200px)] sm:min-h-[550px] w-full"
-          src="images/contact-us-banner-min.webp"
-          alt="img"
-        />
-      </div>
+      <Banner
+        title="GET IN TOUCH"
+        imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
+      />
       <div className="py-12 px-4 container">
         <h2 className="h1-title text-center mb-5 lg:mb-12">Contact Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
@@ -54,13 +53,8 @@ export default function ContactUs() {
             <>
               <CardContainer className="inter-var h-full">
                 <CardBody className="bg-gray-50 shadow-lg relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border h-full ">
-                  <div
-                    key={step.id}
-                    className="flex flex-col items-center text-center transition-transform duration-300 hover:scale-105"
-                  >
-                    <div className="text-48 font-700 text-primary mb-4">
-                      {step.img}
-                    </div>
+                  <div className="flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
+                    {step.icon}
                     <h3 className="text-24 font-500 mb-4">{step.title}</h3>
                     <p className="">{step.description}</p>
                   </div>
@@ -73,7 +67,7 @@ export default function ContactUs() {
           <Contact />
           <div>
             <iframe
-             className="max-w-full"
+              className="max-w-full"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6487308219994!2d70.88005267417756!3d22.889431021285766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598b822e19caaf%3A0x9ededb7cf35d1f98!2sBhavaya%20STONE!5e0!3m2!1sen!2sin!4v1696408058519!5m2!1sen!2sin"
               width="600"
               height="450"

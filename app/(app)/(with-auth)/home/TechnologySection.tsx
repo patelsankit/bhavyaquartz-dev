@@ -13,7 +13,8 @@ export default function TechnologySection() {
           found in clusters. While some individuals may wish to incorporate this
           mineral into their kitchen designs, the natural form of quartz is
           generally deemed unsuitable for countertops or large slab
-          applications. Let's examine the process of manufacturing quartz stone.
+          applications. Let&apos;s examine the process of manufacturing quartz
+          stone.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-5 items-start">
