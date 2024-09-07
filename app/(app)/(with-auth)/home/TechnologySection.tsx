@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function TechnologySection() {
   return (
-    <section className="bg-white py-16 px-4 relative">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-primary/10 py-16 px-4 relative">
+      <div className="container px-5">
         <h3 className="text-16 font-800 text-[#003E64] mb-2">WHY CHOOSE US</h3>
         <h2 className="text-28 md:text-44 font-800 mb-6 md:leading-[52px]">
           Technology <br /> At Bhavya Stone
@@ -17,11 +17,11 @@ export default function TechnologySection() {
           manufacturing process,
         </p>
 
-        <div className="grid grid-cols-1 gap-5 sm:gap-10">
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-5 items-start">
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
               {/* Replace with your actual icon path */}
-              <img className="group-hover:scale-110 transition-all duration-700"
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-1.png"
                 alt="Plant & Machinery Icon"
               />
@@ -36,9 +36,9 @@ export default function TechnologySection() {
             </div>
           </div>
 
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
-              <img className="group-hover:scale-110 transition-all duration-700"
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-2.png"
                 alt="Quality Policy Icon"
               />
@@ -54,9 +54,9 @@ export default function TechnologySection() {
             </div>
           </div>
 
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
-              <img className="group-hover:scale-110 transition-all duration-700"
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-3.png"
                 alt="Testing Facilities Icon"
               />
@@ -72,9 +72,9 @@ export default function TechnologySection() {
             </div>
           </div>
 
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
-              <img className="group-hover:scale-110 transition-all duration-700"
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-4.png"
                 alt="Certifications Icon"
               />
@@ -84,15 +84,15 @@ export default function TechnologySection() {
                 CERTIFICATIONS
               </h3>
               <p className="text-gray-600">
-                Evetis is certified by internationally recognised bodies to
+                Bhavaya is certified by internationally recognised bodies to
                 ensure total conformity to standards of safety and protection.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
-              <img className="group-hover:scale-110 transition-all duration-700"
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-5.png"
                 alt="Company's Network Strength Icon"
               />
@@ -108,9 +108,9 @@ export default function TechnologySection() {
             </div>
           </div>
 
-          <div className="grid grid-flow-col justify-start items-start group">
-            <div className="w-12 h-12">
-              <img className="group-hover:scale-110 transition-all duration-700"
+          <div className="grid justify-center h-full items-start group gap-5 bg-white shadow-cst hover:shadow-lg rounded-lg z-10 p-4 md:p-5 lg:p-6">
+            <div className="w-[60px] h-[60px] mx-auto">
+              <img className="group-hover:scale-110 transition-all duration-700 h-full mx-auto"
                 src="images/why-choose-icon-6.png"
                 alt="Worldwide Footprint Icon"
               />

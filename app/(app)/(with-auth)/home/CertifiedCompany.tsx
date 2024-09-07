@@ -6,7 +6,7 @@ export function CertifiedCompany() {
       </div>
       <div className="section-title-three text-center">
         <p className="text-primary font-500 mb-2">
-          THE EVETIS STONE PRODUCT ARE
+          THE Bhavaya STONE PRODUCT ARE
         </p>
         <h2 className="h1-title">
           ISO 9001:2015 <br /> CERTIFICATES COMPANY

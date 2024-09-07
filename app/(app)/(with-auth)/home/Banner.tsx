@@ -28,7 +28,7 @@ const Banner = () => {
                 <div>
                   <div className="flex-1 space-y-4">
                     <h1 className="text-[60px] font-700">Best Stone In Town</h1>
-                    <p className="text-20">Evetis</p>
+                    <p className="text-20">Bhavaya</p>
                     <Button
                       className="btn btn-primary"
                       as={Link}

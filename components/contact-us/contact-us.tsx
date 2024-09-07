@@ -63,7 +63,7 @@ export default function ContactUs() {
           </div>
           <div className="mt-16">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6487308219994!2d70.88005267417756!3d22.889431021285766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598b822e19caaf%3A0x9ededb7cf35d1f98!2sEVETIS%20STONE!5e0!3m2!1sen!2sin!4v1696408058519!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6487308219994!2d70.88005267417756!3d22.889431021285766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598b822e19caaf%3A0x9ededb7cf35d1f98!2sBhavaya%20STONE!5e0!3m2!1sen!2sin!4v1696408058519!5m2!1sen!2sin"
               width="600"
               height="450"
               style={{ border: 0 }}

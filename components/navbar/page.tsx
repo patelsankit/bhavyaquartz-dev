@@ -88,13 +88,13 @@ export default function NavbarComponent() {
         <Link href="mailto:bhavyaquartz@gmail.com">
           <IconMail className="" />
         </Link>
-        <div onClick={handleMenuToggle}>
+        <div className="cursor-pointer" onClick={handleMenuToggle}>
           {isMenuOpen ? <IconX /> : <IconMenu2 />}
         </div>
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex gap-2 lg:gap-4" justify="center">
-        <NavbarItem className="lg:mr-10">
+      <NavbarContent className="hidden lg:flex gap-2 lg:gap-3 xl:gap-4" justify="center">
+        <NavbarItem className="lg:mr-10 xl:mr-16">
           <Link href="/">
             <NavbarBrand>
               <Image
@@ -124,7 +124,7 @@ export default function NavbarComponent() {
         {/* <NavbarItem>
           <ThemeSwitcher />
         </NavbarItem> */}
-        <NavbarItem className="lg:ml-10">
+        <NavbarItem className="lg:ml-10 xl:ml-16">
           <Button
             className="btn btn-primary"
             target="_blank"

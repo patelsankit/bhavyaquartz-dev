@@ -15,7 +15,7 @@ const SectionTwo = () => {
   return (
     <>
       <section className="overflow-hidden relative bg-[#1e2734] dark:bg-black py-6 md:py-16 lg:py-24 xl:py-32 px-5 lg:min-h-[calc(100dvh-64px)] flex items-center ">
-        <Boxes className="z-10" />
+        {/* <Boxes className="z-10" /> */}
         <div className="container grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-12 relative">
           <div className="flex flex-col justify-center space-y-4 text-white xl:col-span-5">
             <div className="space-y-2">
@@ -47,7 +47,7 @@ const SectionTwo = () => {
               <CarouselContent>
                 <CarouselItem>
                   <img
-                    src="images/banner-1.jpg"
+                    src="images/product-image-1.png"
                     width={800}
                     height={600}
                     alt="Feature 1"
@@ -56,7 +56,7 @@ const SectionTwo = () => {
                 </CarouselItem>
                 <CarouselItem>
                   <img
-                    src="images/banner-2.jpg"
+                    src="images/product-image-2.png"
                     width={800}
                     height={600}
                     alt="Feature 2"
@@ -65,7 +65,7 @@ const SectionTwo = () => {
                 </CarouselItem>
                 <CarouselItem>
                   <img
-                    src="images/banner-3.jpg"
+                    src="images/product-image-3.png"
                     width={800}
                     height={600}
                     alt="Feature 3"
