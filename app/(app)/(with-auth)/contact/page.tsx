@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactUsPage = () => {
   return (
-    <div className="py-5 sm:py-10">
+    <div className="">
       <ContactUs />
     </div>
   );

@@ -34,9 +34,21 @@ export default function ContactUs() {
   ];
 
   return (
-    <section className="py-12 bg-gray-100">
-      <div className="px-4 container">
-        <h2 className="h1-title text-center mb-5 lg:mb-12">Contect Us</h2>
+    <section className="">
+      <div className="relative ">
+        <div className="absolute top-0 h-full w-full bg-black/70 flex items-center justify-center">
+          <h1 className="contact-us-banner-title !font-700 text-white !text-40 sm:!text-[56px]">
+            GET IN TOUCH
+          </h1>
+        </div>
+        <img
+          className="max-h-[calc(100vh-200px)] sm:min-h-[550px] w-full"
+          src="images/contact-us-banner-min.webp"
+          alt="img"
+        />
+      </div>
+      <div className="py-12 px-4 container">
+        <h2 className="h1-title text-center mb-5 lg:mb-12">Contact Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {steps.map((step, index) => (
             <>
@@ -57,12 +69,11 @@ export default function ContactUs() {
             </>
           ))}
         </div>
-        <div className="flex justify-between">
-          <div className="w-full">
-            <Contact />
-          </div>
-          <div className="mt-16">
+        <div className="container mt-5 lg:mt-10 grid lg:grid-cols-2 grid-cols-1 gap-5 lg:gap-10">
+          <Contact />
+          <div>
             <iframe
+             className="max-w-full"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6487308219994!2d70.88005267417756!3d22.889431021285766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598b822e19caaf%3A0x9ededb7cf35d1f98!2sBhavaya%20STONE!5e0!3m2!1sen!2sin!4v1696408058519!5m2!1sen!2sin"
               width="600"
               height="450"
