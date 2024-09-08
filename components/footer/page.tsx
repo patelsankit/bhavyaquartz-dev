@@ -10,9 +10,7 @@ import {
   IconPhone,
 } from "@tabler/icons-react";
 import MainLogo from "../MainLogo";
-import { Logo } from "../Logo";
 import Link from "next/link";
-import { Button } from "@nextui-org/button";
 
 export default function FooterComponent() {
   return (
@@ -22,20 +20,34 @@ export default function FooterComponent() {
           <div className="border-b pb-5 md:pb-10 lg:pb-16 border-gray-border grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
             <div className="flex items-start space-x-3 lg:space-x-6">
               <div className="bg-[#344152] p-2 rounded hover:bg-primary transition-all hover:scale-105">
-                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
-                <IconMapPinShare />
+                <Link
+                  href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw"
+                  target="_blank"
+                >
+                  <IconMapPinShare />
                 </Link>
               </div>
               <div>
                 <h5 className="font-700">
-                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
-                  Office Location
-                </Link></h5>
-                <p>
-                <Link href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw" target="_blank">
-                  Vakaner-Morbi Highway,<br />Behind Shriji Polymers,<br />GIDC, Vakaner
+                  <Link
+                    href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw"
+                    target="_blank"
+                  >
+                    Office Location
                   </Link>
-                  </p>
+                </h5>
+                <p>
+                  <Link
+                    href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw"
+                    target="_blank"
+                  >
+                    Vakaner-Morbi Highway,
+                    <br />
+                    Behind Shriji Polymers,
+                    <br />
+                    GIDC, Vakaner
+                  </Link>
+                </p>
               </div>
             </div>
 
@@ -66,7 +78,9 @@ export default function FooterComponent() {
               <p className="mt-1.5 md:mt-3">Leading Quartz Stone Expert.</p>
               <p className="mt-1.5 md:mt-3 hover:bg-primary border border-gray-border rounded-md w-fit p-2 flex justify-center md:justify-start items-center space-x-2">
                 <IconMail />{" "}
-                <Link href="mailto:abc@gmail.com">quartz@gmail.com</Link>
+                <Link href="mailto:info@bhavyaquartz.com">
+                  info@bhavyaquartz.com
+                </Link>
               </p>
             </div>
             <div className="grid gap-1.5 md:gap-3">
@@ -77,7 +91,7 @@ export default function FooterComponent() {
                 </Link>
               </div>
               <div>
-                <Link href="/about" className="hover:underline">
+                <Link href="/contact" className="hover:underline">
                   Contact
                 </Link>
               </div>
@@ -85,7 +99,7 @@ export default function FooterComponent() {
             <div className="grid gap-1.5 md:gap-3">
               <h5 className="font-700 text-white mb-2">Quick Links</h5>
               <div>
-                <Link href="/about" className="hover:underline">
+                <Link href="/collections" className="hover:underline">
                   Quartz Stone
                 </Link>
               </div>

@@ -8,7 +8,8 @@ const steps = [
     title: "Bhavya",
     description: "Lorem ipsum",
     img: "/images/product-1.png",
-    pdfUrl: "https://bhavyaquartz.com/Pdf-Files/Quartz Stone.pdf",
+    pdfUrl:
+      "https://bhavyaquartz.com/Pdf-Files/Quartz Stone.pdf",
   },
 ];
 
