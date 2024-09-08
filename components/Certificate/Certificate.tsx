@@ -1,53 +1,48 @@
+"use client";
+
+import Link from "next/link";
+const steps = [
+  {
+    number: "01",
+    title: "IEC",
+    description: "Certificate",
+    img: "/images/certificate.jpg",
+    pdfUrl: "https://bhavyaquartz.com/Pdf-Files/IEC.pdf",
+  },
+];
+
+const openPdfInNewTab = (pdfUrl: any) => {
+  window.open(pdfUrl, "_blank");
+};
+
 const Certificate = () => {
   return (
-    <div className="flex justify-center items-center p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
-        <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 md:hover:scale-105">
-          <img
-            width="300"
-            height="400"
-            className="rounded-lg w-full"
-            src="https://www.evetis.in/assets/images/about/IECCertificate.jpg"
-            alt="CE Certificate"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white text-xl font-bold">
-              CE Certificates
-            </span>
-          </div>
-        </div>
-
-        <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 md:hover:scale-105">
-          <img
-            width="300"
-            height="400"
-            className="rounded-lg w-full"
-            src="https://www.evetis.in/assets/images/about/IECCertificate.jpg"
-            alt="CE Certificate"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white text-xl font-bold">
-              CE Certificates
-            </span>
-          </div>
-        </div>
-
-        <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 md:hover:scale-105">
-          <img
-            width="300"
-            height="400"
-            className="rounded-lg w-full"
-            src="https://www.evetis.in/assets/images/about/IECCertificate.jpg"
-            alt="CE Certificate"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white text-xl font-bold">
-              CE Certificates
-            </span>
-          </div>
+    <section className="">
+      <div className="max-w-7xl container px-4 lg:px-7 mt-4 lg:mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-10">
+          {steps.map((step) => (
+            <div key={step.number} className="collection-product-details">
+              <div className="collection-product-details-box">
+                <div
+                  className="collection-product-details-img cursor-pointer"
+                  onClick={() => openPdfInNewTab(step.pdfUrl)}
+                >
+                  <img src={step.img} alt="images" />
+                </div>
+              </div>
+              <div className="collection-product-details-content">
+                <p className="collection-product-sub-title-main">
+                  {step.title}
+                </p>
+                <h3 className="collection-product-sub-title-sub">
+                  <Link href="">{step.description}</Link>
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
