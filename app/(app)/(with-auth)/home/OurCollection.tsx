@@ -53,7 +53,7 @@ export function OurCollection() {
     },
   ];
   return (
-    <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative">
+    <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative pb-16 sm:pb-20 lg:pb-32">
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed top-44 left-5" />
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed bottom-44 right-5" />
       <div className="section-title-three text-center">
