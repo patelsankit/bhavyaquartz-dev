@@ -20,7 +20,7 @@ const Catalogue = () => {
     <section className="">
       <Banner
         title="E-CATALOGUE"
-        imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
+        imageSrc="/images/contact-us-banner-min.webp" 
       />
       <div className="max-w-7xl container px-4 lg:px-7 mt-4 lg:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-10">

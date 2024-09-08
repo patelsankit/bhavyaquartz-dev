@@ -88,7 +88,7 @@ export default function Contact() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="w-full grid gap-3 mx-auto"
+        className="w-full grid gap-3 mx-auto md:max-w-[500px]"
       >
         <Input
           type="text"

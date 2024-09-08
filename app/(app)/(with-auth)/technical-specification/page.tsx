@@ -1,17 +1,32 @@
 "use client";
 
 import React from "react";
+// import {
+//   Table,
+//   TableHeader,
+//   TableColumn,
+//   TableBody,
+//   TableRow,
+//   TableCell,
+//   getKeyValue,
+// } from "@nextui-org/react";
+import Banner from "@/components/Page-Banner/page";
 import {
   Table,
-  TableHeader,
-  TableColumn,
   TableBody,
-  TableRow,
+  TableCaption,
   TableCell,
-  getKeyValue,
-} from "@nextui-org/react";
-import Banner from "@/components/Page-Banner/page";
-
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+type Row = {
+  id: string;
+  testperformed: string;
+  teststandard: string;
+  results: string;
+};
 const columns = [
   { key: "id", label: "ID" },
   { key: "testperformed", label: "TEST PERFORMED" },
@@ -19,7 +34,7 @@ const columns = [
   { key: "results", label: "RESULTS" },
 ];
 
-const rows = [
+const rows: Row[] = [
   {
     id: "01",
     testperformed: "App. Density Kg,/dm3",
@@ -181,39 +196,52 @@ const rows = [
 
 const TechnicalSpecification = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="bg-gray-100">
       <Banner
         title="TECHNICAL SPECIFICATION"
         imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
       />
-      <div className="px-4 pt-7 container">
-        <div className="text-center mb-10">
-          <h2 className="h2-title text-center mb-2 text-blue-600 uppercase">
+      <div className="px-4 pt-7 container 2xl:max-w-[1300px]">
+        <div className="text-center mb-5">
+          <h2 className="h2-title font-700 text-center mb-2 text-primary uppercase">
             Specification
           </h2>
           <h1 className="h1-title text-center mb-2">Technical Specification</h1>
         </div>
-        <div className="overflow-x-auto">
-          <Table
-            aria-label="Technical Specification Table"
-            className="border-separate border-spacing-0"
-          >
-            <TableHeader>
-              {columns.map((column) => (
-                <TableColumn key={column.key}>{column.label}</TableColumn>
-              ))}
+        <div className="overflow-x-auto pb-5 sm:pb-10">
+          <Table>
+            <TableCaption>A list of quartz slab tests.</TableCaption>
+            <TableHeader className="bg-primary text-white">
+              <TableRow>
+                {columns.map((column) => (
+                  <TableHead
+                    key={column.key}
+                    className="w-[100px] text-white p-3 whitespace-nowrap"
+                  >
+                    {column.label}
+                  </TableHead>
+                ))}
+              </TableRow>
             </TableHeader>
             <TableBody>
               {rows.map((row) => (
                 <TableRow key={row.id}>
                   {columns.map((column) => (
                     <TableCell key={column.key}>
-                      {getKeyValue(row, column.key)}
+                      {" "}
+                      {row[column.key as keyof Row]}
                     </TableCell>
                   ))}
                 </TableRow>
               ))}
             </TableBody>
+            <TableFooter>
+              <TableRow>
+                <TableCell colSpan={4} align="center">
+                  Quartz Slab Size: 1650x3250 MM | 1500x3100 MM
+                </TableCell>
+              </TableRow>
+            </TableFooter>
           </Table>
         </div>
       </div>
