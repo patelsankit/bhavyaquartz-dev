@@ -1,6 +1,6 @@
 import { GeneralCollection } from "@/components/Collection/GeneralCollection";
 
-const BasicCollections = () => {
+const SubCollectionpages = () => {
   const steps = [
     {
       title: "Crystal Blue",
@@ -31,9 +31,9 @@ const BasicCollections = () => {
 
   return (
     <section>
-      <GeneralCollection steps={steps} titlename="basic" />
+      <GeneralCollection steps={steps} titlename="basic series" />
     </section>
   );
 };
 
-export default BasicCollections;
+export default SubCollectionpages;

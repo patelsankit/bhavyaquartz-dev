@@ -35,12 +35,12 @@ export function GeneralCollection({
   };
 
   return (
-    <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative">
+    <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative  pb-16 sm:pb-20 lg:pb-32">
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed top-44 left-5" />
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed bottom-44 right-5" />
       <div className="section-title-three text-center">
         <p className="text-primary font-500 mb-2">
-          {titlename.toUpperCase()} COLLECTIONS
+          {titlename.toUpperCase()}
         </p>
         <h2 className="h1-title">
           We Are Specialist For Quartz

@@ -40,37 +40,37 @@ export default function NavbarComponent() {
       keyIndex: "4",
       url: "/technical-specification",
     },
-    { cstclass: "", name: "E-Catalogue", keyIndex: "5", url: "/e-catalogue" },
+    // { cstclass: "", name: "E-Catalogue", keyIndex: "5", url: "/e-catalogue" },
     { cstclass: "", name: "Contact", keyIndex: "6", url: "/contact" },
   ];
   const collectioItems = [
-    { name: "Basic Series", keyIndex: "1", url: "collections/basic-series" },
+    { name: "Basic Series", keyIndex: "1", url: "/collections/basic-series" },
     {
       name: "Calacatta Series",
       keyIndex: "1",
-      url: "collections/calacatta-series",
+      url: "/collections/calacatta-series",
     },
     {
       name: "Carrara Series",
       keyIndex: "1",
-      url: "collections/carrara-series",
+      url: "/collections/carrara-series",
     },
-    { name: "Gravel Series", keyIndex: "1", url: "collections/gravel-series" },
+    { name: "Gravel Series", keyIndex: "1", url: "/collections/gravel-series" },
     {
       name: "Multi Classic Series",
       keyIndex: "1",
-      url: "collections/multi-classic-series",
+      url: "/collections/multi-classic-series",
     },
     {
       name: "Multi Exotic Series",
       keyIndex: "1",
-      url: "collections/multi-exotic-series",
+      url: "/collections/multi-exotic-series",
     },
-    { name: "Plain Colours", keyIndex: "1", url: "collections/plain-colours" },
+    { name: "Plain Colours", keyIndex: "1", url: "/collections/plain-colours" },
     {
       name: "Satuario Series",
       keyIndex: "1",
-      url: "collections/satuario-series",
+      url: "/collections/satuario-series",
     },
   ];
 
@@ -139,7 +139,7 @@ export default function NavbarComponent() {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden lg:flex gap-2 lg:gap-4 xl:gap-8"
+        className="hidden lg:flex gap-2 lg:gap-4 xl:gap-6"
         justify="center"
       >
         <NavbarItem className="lg:mr-10 xl:mr-16">
@@ -286,7 +286,7 @@ export default function NavbarComponent() {
             >
               Technical Specification
             </Link>
-            <Link
+            {/* <Link
               className={`px-2 py-2.5 border-b border-white/10 block ${
                 pathname === "/e-catalogue" ? "text-white underline" : ""
               }`}
@@ -294,7 +294,7 @@ export default function NavbarComponent() {
               onClick={closeMenu}
             >
               E-Catalogue
-            </Link>
+            </Link> */}
             <Link
               className={`px-2 py-2.5 border-b border-white/10 block ${
                 pathname === "/contact" ? "text-white underline" : ""
