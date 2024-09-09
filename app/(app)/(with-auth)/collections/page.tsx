@@ -6,7 +6,7 @@ const Collections = () => {
     <section className="">
       <Banner
         title="ALL COLLECTIONS"
-        imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
+        imageSrc="/images/contact-us-banner-min.webp"
       />
       <Collection />
     </section>

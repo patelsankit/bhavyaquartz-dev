@@ -320,8 +320,8 @@
   visibility: hidden;
   -webkit-transform-origin: top center;
   transform-origin: top center;
-  -webkit-transform: scaleY(0) translateZ(100px);
-  transform: scaleY(0) translateZ(100px);
+  -webkit-transform: scaleX(0) translateZ(100px);
+  transform: scaleX(0) translateZ(100px);
   -webkit-transition: opacity 500ms ease, visibility 500ms ease,
     -webkit-transform 700ms ease;
   transition: opacity 500ms ease, visibility 500ms ease,
@@ -334,8 +334,8 @@
 
 .collection-product-details:hover .collection-product-details-img:before {
   visibility: visible;
-  -webkit-transform: scaleY(1) translateZ(0px);
-  transform: scaleY(1) translateZ(0px);
+  -webkit-transform: scaleX(1) translateZ(0px);
+  transform: scaleX(1) translateZ(0px);
 }
 
 .collection-product-details-img img {

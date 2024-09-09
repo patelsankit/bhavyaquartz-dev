@@ -1,25 +1,23 @@
+import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
 
 const ImageModal = ({ isOpen, onClose, imageSrc }: any) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-      <div className="relative bg-white p-4 rounded">
-        <button
-          className="absolute top-2 right-2 text-2xl font-bold"
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[99]">
+      <div className="relative bg-white p-6 rounded max-h-[calc(100%-20px)] mx-4">
+        <IconX
           onClick={onClose}
-        >
-          &times;
-        </button>
-        <Image
-          src={imageSrc}
-          alt="Modal Image"
-          layout="responsive"
-          width={1000}
-          height={1000}
-          objectFit="contain"
+          className="absolute top-2 right-2 text-24 font-700 hover:text-primary"
         />
+        <div className="min-w-[300px] min-h-[150px]">
+          <img
+            src={imageSrc}
+            alt="Modal Image"
+            className="rounded-lg max-w-full lg:max-w-[800px]"
+          />
+        </div>
       </div>
     </div>
   );

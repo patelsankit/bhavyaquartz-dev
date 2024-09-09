@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -21,17 +18,15 @@ export default function Layout({ children }: any) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Show loader for 2.5 seconds
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (!loading) {
-      // Simulate component loading here (e.g., fetching data or similar)
       const loadContent = async () => {
-        // Simulate content loading
-        await new Promise(resolve => setTimeout(resolve, 500)); // Example delay
+        await new Promise((resolve) => setTimeout(resolve, 500));
         setContentLoaded(true);
       };
 

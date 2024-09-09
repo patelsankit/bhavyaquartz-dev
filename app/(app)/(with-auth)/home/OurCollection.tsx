@@ -1,4 +1,5 @@
 import LogoFloating from "@/components/LogoFloating";
+import Image from "next/image";
 import Link from "next/link";
 
 export function OurCollection() {
@@ -7,49 +8,49 @@ export function OurCollection() {
       number: "01",
       title: "Bhavya",
       description: "Basic Series",
-      img: "images/product/basic-series/Crystal Blue.jpg",
+      img: "/images/product/basic-series/Crystal Blue.webp",
     },
     {
       number: "02",
       title: "Bhavya",
       description: "Calacatta Series",
-      img: "images/product/calacatta-series/EXOTIC-WHITE.jpg",
+      img: "/images/product/calacatta-series/exotic-white.webp",
     },
     {
       number: "03",
       title: "Bhavya",
       description: "Carrara Series",
-      img: "images/product/carrara-series/itaca white.jpg",
+      img: "/images/product/carrara-series/itaca-white.webp",
     },
     {
       number: "04",
       title: "Bhavya",
       description: "Gravel Series",
-      img: "images/product/gravel-series/GRAVEL VERDE.jpg",
+      img: "/images/product/gravel-series/GRAVEL VERDE.jpg",
     },
     {
-      number: "04",
+      number: "05",
       title: "Bhavya",
       description: "Multi Classic Series",
-      img: "images/product/multi-classic-series/Bricko.jpg",
+      img: "/images/product/multi-classic-series/Bricko.jpg",
     },
     {
-      number: "04",
+      number: "06",
       title: "Bhavya",
       description: "Multi Exotic Series",
-      img: "images/product/multi-exotic-series/avalanche.jpg",
+      img: "/images/product/multi-exotic-series/avalanche.jpg",
     },
     {
       number: "07",
       title: "Bhavya",
       description: "Plain Colours",
-      img: "images/product/plain-colours/Pure White.jpg",
+      img: "/images/product/plain-colours/Pure White.jpg",
     },
     {
       number: "08",
       title: "Bhavya",
       description: "Satuario Series",
-      img: "images/product/satuario-series/CalacattaCostta.jpg",
+      img: "/images/product/satuario-series/CalacattaCostta.jpg",
     },
   ];
   return (
@@ -70,7 +71,14 @@ export function OurCollection() {
             <div key={step.number} className="collection-product-details">
               <div className="collection-product-details-box h-full">
                 <div className="collection-product-details-img h-full">
-                  <img src={step.img} alt="images" className="h-full" />
+                  <img src={step.img} alt="image" className="h-full" />
+                  {/* <Image
+                    src={step.img}
+                    height="200"
+                    width="350"
+                    className="h-full"
+                    alt="logo"
+                  /> */}
                 </div>
               </div>
               <div className="collection-product-details-content">

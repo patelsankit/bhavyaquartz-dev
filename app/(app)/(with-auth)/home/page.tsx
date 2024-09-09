@@ -8,7 +8,6 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@nextui-org/react";
-import CardComponentspage from "../nextcomponents/card/page";
 import Banner from "./Banner";
 import SectionTwo from "./SectionTwo";
 import { SectionThree } from "./SectionThree";
