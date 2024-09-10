@@ -33,7 +33,7 @@ export default function ContactUs() {
             </div>
           </Link>
           <Link
-            href="tel:+4733378901"
+            href="tel:+916353757842"
             className="p-6 md:p-10 bg-white shadow-card hover:shadow-xl border border-solid border-gray-300 rounded-xl"
           >
             <div className="flex flex-col  items-center text-center transition-transform duration-300 hover:scale-105">

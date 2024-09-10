@@ -57,7 +57,7 @@ export default function FooterComponent() {
               </div>
               <div>
                 <h5 className="font-700">Get a quote</h5>
-                <p>+91 63537 57842</p>
+                <Link href="tel:+916353757842">+91 63537 57842</Link>
               </div>
             </div>
 
