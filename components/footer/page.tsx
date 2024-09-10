@@ -41,11 +41,11 @@ export default function FooterComponent() {
                     href="https://maps.app.goo.gl/Db6YUr2soU9PeG8J9?g_st=iw"
                     target="_blank"
                   >
-                    Vakaner-Morbi Highway,
+                    Wankaner-Morbi Highway,
                     <br />
                     Behind Shriji Polymers,
                     <br />
-                    GIDC, Vakaner
+                    GIDC, Wankaner
                   </Link>
                 </p>
               </div>
@@ -113,25 +113,25 @@ export default function FooterComponent() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-3 items-center md:justify-between border-t border-[#344152] py-4 md:py-6">
-            <p>
+          <div className="flex flex-wrap gap-3 items-center justify-center md:justify-between border-t border-[#344152] py-4 md:py-6">
+            <p className="order-2 md:order-1">
               © Copyright 2024 Quartz.com All rights reserved. Developed
               By&nbsp;
               <a href="#" className="hover:underline">
                 Dream Devs
               </a>
             </p>
-            <div className="flex justify-center gap-3">
+            <div className="order-1 md:order-2 flex justify-center gap-3">
               <Link
                 target="_blank"
-                href="https://facebook.com/"
+                href="https://www.facebook.com/bhavyaquartz?mibextid=kFxxJD"
                 className="text-white bg-[#344152] p-2 rounded hover:bg-primary transition-all hover:scale-105"
               >
                 <IconBrandFacebook />
               </Link>
               <Link
                 target="_blank"
-                href="https://instagram.com/"
+                href="https://www.instagram.com/bhavyaquartz?igsh=MWJ4YnRoMjA2OG9mMg%3D%3D&utm_source=qr"
                 className="text-white bg-[#344152] p-2 rounded hover:bg-primary transition-all hover:scale-105"
               >
                 <IconBrandInstagram />

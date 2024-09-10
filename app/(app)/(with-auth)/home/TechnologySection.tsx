@@ -89,7 +89,7 @@ export default function TechnologySection() {
                 CERTIFICATIONS
               </h3>
               <p className="text-gray-600">
-                Bhavaya is certified by internationally recognized bodies to
+                Bhavya is certified by internationally recognized bodies to
                 guarantee full compliance with safety and protection standards.
               </p>
             </div>

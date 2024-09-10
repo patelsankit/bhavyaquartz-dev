@@ -10,7 +10,7 @@ const AboutusSection = () => {
         {/* <div className="about-three__shape-3 float-bob-x">
           <img src="images/about-three-shape-3.png" alt="image" />
         </div> */}
-          {/* <div className="about-three__shape-4 float-bob-y">
+        {/* <div className="about-three__shape-4 float-bob-y">
             <img src="images/about-three-shape-4.png" alt="image" />
           </div> */}
         <div className="container">
@@ -52,7 +52,7 @@ const AboutusSection = () => {
                     </p>
                   </div>
                   <h2 className="section-title-three__title">
-                    Bhavaya is One of The
+                    Bhavya is One of The
                     <br /> Best Quartz Stone Company
                   </h2>
                 </div>
@@ -61,7 +61,12 @@ const AboutusSection = () => {
                   and exporter of quality quartz stone in India.
                 </p>
                 <p className="about-three__text-2">
-                Our company offers a premium selection of quartz stone countertops that boast numerous qualities, including exceptional durability, strength, non-porosity, and appealing colors. Each stone undergoes rigorous quality testing by our expert team to ensure that the final product is flawless and boasts a long-lasting lifespan.
+                  Our company offers a premium selection of quartz stone
+                  countertops that boast numerous qualities, including
+                  exceptional durability, strength, non-porosity, and appealing
+                  colors. Each stone undergoes rigorous quality testing by our
+                  expert team to ensure that the final product is flawless and
+                  boasts a long-lasting lifespan.
                 </p>
               </div>
             </div>

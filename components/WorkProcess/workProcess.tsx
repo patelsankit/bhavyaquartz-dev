@@ -9,13 +9,13 @@ export default function WorkProcess() {
       number: "01",
       title: "Identifying Problems",
       description:
-        "Whatever the issue with your quartz stone, we at Bhavaya, stand ready to help with quartz restoration, quartz repair and quartz cleaning.",
+        "Whatever the issue with your quartz stone, we at Bhavya, stand ready to help with quartz restoration, quartz repair and quartz cleaning.",
     },
     {
       number: "02",
       title: "Research Your Problem",
       description:
-        "Revisiting the “Quartz Problem” in Bhavaya Studies: A Review and New, Open-access, Experimental Dataset",
+        "Revisiting the “Quartz Problem” in Bhavya Studies: A Review and New, Open-access, Experimental Dataset",
     },
     {
       number: "03",

@@ -417,10 +417,10 @@ export function Collection() {
                 </div>
                 <div className="collection-product-details-content">
                   <p className="collection-product-sub-title-main">
-                    {step.title}
+                    {step.description}
                   </p>
                   <h3 className="collection-product-sub-title-sub">
-                    <Link href="">{step.description}</Link>
+                    <Link href="">{step.title}</Link>
                   </h3>
                 </div>
               </div>

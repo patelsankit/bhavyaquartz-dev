@@ -39,9 +39,7 @@ export function GeneralCollection({
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed top-44 left-5" />
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed bottom-44 right-5" />
       <div className="section-title-three text-center">
-        <p className="text-primary font-500 mb-2">
-          {titlename.toUpperCase()}
-        </p>
+        <p className="text-primary font-500 mb-2">{titlename.toUpperCase()}</p>
         <h2 className="h1-title">
           We Are Specialist For Quartz
           <br />
@@ -62,10 +60,10 @@ export function GeneralCollection({
               </div>
               <div className="collection-product-details-content">
                 <p className="collection-product-sub-title-main">
-                  {step.title}
+                  {step.description}
                 </p>
                 <h3 className="collection-product-sub-title-sub">
-                  <Link href="">{step.description}</Link>
+                  <Link href="">{step.title}</Link>
                 </h3>
               </div>
             </div>

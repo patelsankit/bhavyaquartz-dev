@@ -2,15 +2,16 @@ export function CertifiedCompany() {
   return (
     <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative">
       <div className="absolute left-0 top-4 img-bounce">
-        <img className="" src="images/mask-image-section-down.png" alt="mask-image" />
+        <img
+          className=""
+          src="images/mask-image-section-down.png"
+          alt="mask-image"
+        />
       </div>
       <div className="section-title-three text-center">
-        <p className="text-primary font-500 mb-2">
-          THE Bhavaya STONE PRODUCT ARE
+        <p className="text-primary font-600 mb-2 text-18 sm:text-30">
+          THE BHAVYA STONE PRODUCT ARE
         </p>
-        <h2 className="h1-title">
-          ISO 9001:2015 <br /> CERTIFICATES COMPANY
-        </h2>
       </div>
       <div className="max-w-7xl container px-4 lg:px-7 mt-4 lg:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-7">

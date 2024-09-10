@@ -21,9 +21,7 @@ const SectionTwo = () => {
             <div className="space-y-2">
               <h1 className="z-20 relative text-30 font-600 tracking-tighter sm:text-36 md:text-40 lg:text-48">
                 Make Your Home{" "}
-                <Highlight className="z-20 text-white">
-                  Attractive
-                </Highlight>
+                <Highlight className="z-20 text-white">Attractive</Highlight>
               </h1>
               <p className="z-20 relative max-w-[600px] text-white/80 md:text-16 lg:text-18 xl:text-20">
                 We are one of the most leading companies in the manufacture and
@@ -35,7 +33,7 @@ const SectionTwo = () => {
                 className="z-20 relative btn btn-primary px-10 rounded-md py-4 h-12 font-600 md:text-18"
                 target="_blank"
                 as={Link}
-                href="https://wa.me/917202900299?text=Hello I Have Tiles Related Inquiry!"
+                href="https://wa.me/916353757842?text=Hello I Have Tiles Related Inquiry!"
                 variant="flat"
               >
                 Contact us

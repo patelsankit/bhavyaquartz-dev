@@ -130,7 +130,7 @@ export default function NavbarComponent() {
         </Link>
       </NavbarContent>
       <NavbarContent className="lg:hidden" justify="end">
-        <Link href="mailto:bhavyaquartz@gmail.com">
+        <Link href="mailto:info@bhavyaquartz.com">
           <IconMail className="" />
         </Link>
         <div className="cursor-pointer" onClick={handleMenuToggle}>
@@ -199,12 +199,12 @@ export default function NavbarComponent() {
             </NavbarItem>
           </>
         ))}
+        {/* https://wa.me/916353757842?text=Hello I Have Tiles Related Inquiry! */}
         <NavbarItem className="lg:ml-10 xl:ml-16">
           <Button
             className="btn btn-primary"
-            target="_blank"
             as={Link}
-            href="https://wa.me/917202900299?text=Hello I Have Tiles Related Inquiry!"
+            href="mailto:info@bhavyaquartz.com"
             variant="flat"
           >
             Mail Inquiry
