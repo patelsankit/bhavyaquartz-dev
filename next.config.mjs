@@ -2,7 +2,7 @@
 const nextConfig = {
   // output: 'export',
   images: {
-    domains: ["www.pngkey.com"], // Add the external domain here
+    domains: ["www.pngkey.com", "assets.aceternity.com"],
   },
 };
 

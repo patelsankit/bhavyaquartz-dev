@@ -35,7 +35,7 @@ const Certificate = () => {
                   {step.title}
                 </p>
                 <h3 className="collection-product-sub-title-sub">
-                  <Link href="">{step.description}</Link>
+                  <span>{step.description}</span>
                 </h3>
               </div>
             </div>

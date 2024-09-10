@@ -17,7 +17,7 @@ export function CertifiedCompany() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-7">
           <div className="certifiend-main-div p-4 md:p-7">
             <h3 className="certified__title">
-              <a href="javascript:void(0)">RESEARCH</a>
+              <a onClick={(e) => e.preventDefault()}>RESEARCH</a>
             </h3>
             <div className="p-5">
               <span>
@@ -34,7 +34,7 @@ export function CertifiedCompany() {
           </div>
           <div className="certifiend-main-div p-4 md:p-7">
             <h3 className="certified__title">
-              <a href="javascript:void(0)">QUALITY</a>
+              <a onClick={(e) => e.preventDefault()}>QUALITY</a>
             </h3>
             <div className="p-5">
               <span>
@@ -51,7 +51,7 @@ export function CertifiedCompany() {
           </div>
           <div className="certifiend-main-div p-4 md:p-7">
             <h3 className="certified__title">
-              <a href="javascript:void(0)">DELIVERY</a>
+              <a onClick={(e) => e.preventDefault()}>DELIVERY</a>
             </h3>
             <div className="p-5">
               <span>
@@ -68,7 +68,7 @@ export function CertifiedCompany() {
           </div>
           <div className="certifiend-main-div p-4 md:p-7">
             <h3 className="certified__title">
-              <a href="javascript:void(0)">SUPPORT</a>
+              <a onClick={(e) => e.preventDefault()}>SUPPORT</a>
             </h3>
             <div className="p-5">
               <span>
@@ -85,7 +85,7 @@ export function CertifiedCompany() {
           </div>
           <div className="certifiend-main-div p-4 md:p-7">
             <h3 className="certified__title">
-              <a href="javascript:void(0)">DISCOVERY</a>
+              <a onClick={(e) => e.preventDefault()}>DISCOVERY</a>
             </h3>
             <div className="p-5">
               <span>

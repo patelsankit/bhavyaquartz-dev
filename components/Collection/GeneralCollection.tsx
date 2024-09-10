@@ -1,8 +1,6 @@
-// GeneralCollection.tsx
 "use client";
 
 import LogoFloating from "@/components/LogoFloating";
-import Link from "next/link";
 import { useState } from "react";
 import ImageModal from "../ImageModel/image-model";
 
@@ -14,7 +12,7 @@ interface Step {
 
 interface GeneralCollectionProps {
   steps: Step[];
-  titlename: string; // Add this prop
+  titlename: string;
 }
 
 export function GeneralCollection({
@@ -22,16 +20,18 @@ export function GeneralCollection({
   titlename,
 }: GeneralCollectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
 
-  const openModal = (imageSrc: string) => {
-    setSelectedImage(imageSrc);
+  const openModal = (index: number) => {
+    setSelectedImageIndex(index);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setSelectedImage(null);
+    setSelectedImageIndex(null);
   };
 
   return (
@@ -53,7 +53,7 @@ export function GeneralCollection({
               <div className="collection-product-details-box h-full">
                 <div
                   className="collection-product-details-img cursor-pointer h-full"
-                  onClick={() => openModal(step.img)}
+                  onClick={() => openModal(index)}
                 >
                   <img src={step.img} alt={step.title} className="h-full" />
                 </div>
@@ -63,7 +63,7 @@ export function GeneralCollection({
                   {step.description}
                 </p>
                 <h3 className="collection-product-sub-title-sub">
-                  <Link href="">{step.title}</Link>
+                  <span>{step.title}</span>
                 </h3>
               </div>
             </div>
@@ -71,11 +71,14 @@ export function GeneralCollection({
         </div>
       </div>
 
-      <ImageModal
-        isOpen={isModalOpen}
-        imageSrc={selectedImage}
-        onClose={closeModal}
-      />
+      {isModalOpen && selectedImageIndex !== null && (
+        <ImageModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          steps={steps}
+          selectedImageIndex={selectedImageIndex}
+        />
+      )}
     </div>
   );
 }
