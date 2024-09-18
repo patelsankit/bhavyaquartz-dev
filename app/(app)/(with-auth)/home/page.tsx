@@ -15,6 +15,7 @@ import TechnologySection from "./TechnologySection";
 import { CertifiedCompany } from "./CertifiedCompany";
 import { OurCollection } from "./OurCollection";
 import AboutusSection from "./AboutusSection";
+import EdgeProfiles from "./EdgeProfiles";
 
 const HomePage = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -25,7 +26,8 @@ const HomePage = () => {
       <SectionTwo />
       <AboutusSection />
       <SectionThree />
-      <TechnologySection />
+      <EdgeProfiles />
+      {/* <TechnologySection /> */}
       <CertifiedCompany />
       <OurCollection />
     </>
