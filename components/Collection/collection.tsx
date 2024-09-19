@@ -40,8 +40,8 @@ export function Collection() {
       description: "Basic Series",
       img: "/images/product/basic-series/Ice White.webp",
     },
-     // Calacatta Series
-     {
+    // Calacatta Series
+    {
       title: "ALASKA WHITE",
       description: "Calacatta Series",
       img: "/images/product/calacatta-series/ALASKA WHITE.webp",
@@ -415,8 +415,8 @@ export function Collection() {
               >
                 <div className="collection-product-details-box h-full">
                   <div className="collection-product-details-img cursor-pointer h-full">
-                    {/* <img src={step.img} alt={step.title} className="h-full" /> */}
-                    <Image
+                    <img src={step.img} alt={step.title} className="h-full" />
+                    {/* <Image
                       src={step.img}
                       alt={step.title}
                       className="h-full"
@@ -425,7 +425,7 @@ export function Collection() {
                       priority={index === 0} // Prioritize the first image
                       placeholder="blur"
                       blurDataURL={step.img}
-                    />
+                    /> */}
                   </div>
                 </div>
                 <div className="collection-product-details-content">

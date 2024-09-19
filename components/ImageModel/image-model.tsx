@@ -43,7 +43,7 @@ const ImageModal = ({ isOpen, onClose, steps, selectedImageIndex }: any) => {
               <div className="collection-product-details">
                 <div className="collection-product-details-box h-full">
                   <div className="collection-product-details-img cursor-pointer h-full">
-                    <Image
+                    {/* <Image
                       src={step.img}
                       alt={step.title}
                       height={200}
@@ -53,13 +53,13 @@ const ImageModal = ({ isOpen, onClose, steps, selectedImageIndex }: any) => {
                       blurDataURL={step.img} // Placeholder for loading
                       onClick={handleImageClick}
                       className="rounded-lg max-h-[calc(100vh-80px)] object-contain mx-auto h-full"
-                    />
-                    {/* <img
+                    /> */}
+                    <img
                       onClick={handleImageClick}
                       src={step.img}
                       alt={step.title}
                       className="rounded-lg max-h-[calc(100vh-80px)] object-contain mx-auto h-full"
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="collection-product-details-content !px-2 sm:!px-5">
