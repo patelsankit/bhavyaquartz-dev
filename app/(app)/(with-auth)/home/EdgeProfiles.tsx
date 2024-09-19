@@ -30,9 +30,9 @@ const EdgeProfiles = () => {
                 surfaces allow for a wide range of edge profile design options.
                 Many edge profiles are possible,from a standard edge to
                 laminated or mitered edges which create the appearance of a
-                thicker slab. All edge details should have a minimum 1/8" radius
+                thicker slab. All edge details should have a minimum 1/8 radius
                 on anyprofile, for both top and bottom edges. For high-traffic
-                areas, 1/4" minimum radius is suggested.
+                areas, 1/4 minimum radius is suggested.
               </p>
               <p className="about-three__text-2">Available Thickness</p>
               <ul className="about-three__points list-unstyled">
