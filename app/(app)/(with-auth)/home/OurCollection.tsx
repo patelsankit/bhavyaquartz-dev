@@ -81,7 +81,7 @@ export function OurCollection() {
                   /> */}
                 </div>
               </div>
-              <div className="collection-product-details-content">
+              <div className="notranslate collection-product-details-content">
                 <p className="collection-product-sub-title-main">
                   {step.title}
                 </p>

@@ -10,6 +10,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { Toaster } from "react-hot-toast";
 import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import GotoTop from "@/components/GotoTop/GotoTop";
+import TranslateComponent from "./translate";
 
 export default function Layout({ children }: any) {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,8 @@ export default function Layout({ children }: any) {
         <Toaster position="top-right" reverseOrder={false} />
         <CustomCursor />
         <NavbarComponent />
+
+        <TranslateComponent />
         {children}
         <FooterComponent />
         <GotoTop />
