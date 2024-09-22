@@ -65,10 +65,11 @@ const TranslateComponent = () => {
     clearGoogleTranslateStorage();
     addGoogleTranslateScript();
   }, []);
-
   useEffect(() => {
-    const changeLanguage = (lang) => {
-      const googleTranslateSelect = document.querySelector(".goog-te-combo");
+    const changeLanguage = (lang: string) => {
+      const googleTranslateSelect = document.querySelector(
+        ".goog-te-combo"
+      ) as HTMLSelectElement;
       if (googleTranslateSelect) {
         googleTranslateSelect.value = lang;
         googleTranslateSelect.dispatchEvent(new Event("change"));
@@ -78,7 +79,7 @@ const TranslateComponent = () => {
     changeLanguage(selectedLanguage);
   }, [selectedLanguage]);
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang);
   };
 
