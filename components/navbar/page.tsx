@@ -99,7 +99,7 @@ export default function NavbarComponent() {
             </NavbarBrand>
           </Link>
         </NavbarContent>
-        <NavbarContent className="lg:hidden" justify="end">
+        <NavbarContent className="lg:hidden gap-2.5 sm:gap-4" justify="end">
           <NavbarItem className="">
             <TranslateComponent />
           </NavbarItem>
