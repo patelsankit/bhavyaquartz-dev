@@ -81,164 +81,169 @@ export default function NavbarComponent() {
 
   return (
     <>
-      <Navbar
-        className="[&>header]:gap-2 z-[99] header-main bg-white dark:bg-black"
-        disableAnimation
-        isBordered
-      >
-        <NavbarContent className="lg:hidden lg:pr-3" justify="center">
-          <Link href="/">
-            <NavbarBrand>
+    <Navbar
+      className="[&>header]:gap-2 z-[99] header-main bg-white dark:bg-black"
+      disableAnimation
+      isBordered
+    >
+      <NavbarContent className="lg:hidden lg:pr-3" justify="center">
+        <Link href="/">
+          <NavbarBrand>
               <img
                 src="/images/logo-3x.png"
-                height="100"
-                width="100"
-                className="w-[140px]"
-                alt="logo"
-              />
-            </NavbarBrand>
-          </Link>
-        </NavbarContent>
+              height="100"
+              width="100"
+              className="w-[140px]"
+              alt="logo"
+            />
+          </NavbarBrand>
+        </Link>
+      </NavbarContent>
         <NavbarContent className="lg:hidden gap-2.5 sm:gap-4" justify="end">
           <NavbarItem className="">
             <TranslateComponent />
           </NavbarItem>
-          <Link href="mailto:info@bhavyaquartz.com">
-            <IconMail />
-          </Link>
-          <div className="cursor-pointer" onClick={handleMenuToggle}>
-            {isMenuOpen ? <IconX /> : <IconMenu2 />}
-          </div>
-        </NavbarContent>
+        <Link href="mailto:info@bhavyaquartz.com">
+          <IconMail />
+        </Link>
+        <div className="cursor-pointer" onClick={handleMenuToggle}>
+          {isMenuOpen ? <IconX /> : <IconMenu2 />}
+        </div>
+      </NavbarContent>
 
         <NavbarContent
           className="hidden lg:flex gap-2 lg:gap-3 xl:gap-4"
           justify="center"
         >
-          <NavbarItem className="lg:mr-10 xl:mr-16">
-            <Link href="/">
-              <NavbarBrand>
-                <Image
-                  src="/images/logo.svg"
-                  height="100"
-                  width="150"
-                  alt="logo"
-                />
-              </NavbarBrand>
+        <NavbarItem className="lg:mr-10 xl:mr-16">
+          <Link href="/">
+            <NavbarBrand>
+              <Image
+                src="/images/logo.svg"
+                height="100"
+                width="150"
+                alt="logo"
+              />
+            </NavbarBrand>
+          </Link>
+        </NavbarItem>
+        {menuItems.map((item, index) => (
+          <NavbarItem
+            key={index}
+            className={`${item.cstclass} py-4 cursor-pointer`}
+            onMouseEnter={() =>
+              item.name === "Collections" && setIsHovered(true)
+            }
+            onMouseLeave={() =>
+              item.name === "Collections" && setIsHovered(false)
+            }
+          >
+            <Link
+              className={`relative text-14 lg:text-16 font-600`}
+              href={item.url}
+            >
+              <div
+                className={`flex gap-2 items-center rounded-lg px-2 py-0.5 ${
+                  pathname === item.url ||
+                  (item.url === "/collections" && pathname.startsWith(item.url))
+                    ? "bg-primary hover:opacity-80 text-white font-700 rounded-lg p-1.5"
+                    : "text-black hover:text-[#414651] dark:text-gray-50"
+                }`}
+              >
+                {item.name}
+                {item.name === "Collections" && (
+                  <IconPlus className="w-5 h-5" />
+                )}
+              </div>
+              {item.name === "Collections" && isHovered && (
+                <div className="absolute top-8 p-2.5 bg-white rounded-md shadow-medium min-w-[300px] w-full">
+                  {collectioItems.map((subItem, subIndex) => (
+                    <Link
+                      key={subIndex}
+                      href={subItem.url}
+                      className="px-4 py-2.5 block hover:bg-primary/20 rounded-md"
+                    >
+                      {subItem.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </Link>
           </NavbarItem>
-          {menuItems.map((item, index) => (
-            <NavbarItem
-              key={index}
-              className={`${item.cstclass} py-4 cursor-pointer`}
-              onMouseEnter={() =>
-                item.name === "Collections" && setIsHovered(true)
-              }
-              onMouseLeave={() =>
-                item.name === "Collections" && setIsHovered(false)
-              }
-            >
-              <Link
-                className={`relative text-14 lg:text-16 font-600`}
-                href={item.url}
-              >
-                <div
-                  className={`flex gap-2 items-center rounded-lg px-2 py-0.5 ${
-                    pathname === item.url ||
-                    (item.url === "/collections" &&
-                      pathname.startsWith(item.url))
-                      ? "bg-primary hover:opacity-80 text-white font-700 rounded-lg p-1.5"
-                      : "text-black hover:text-[#414651] dark:text-gray-50"
-                  }`}
-                >
-                  {item.name}
-                  {item.name === "Collections" && (
-                    <IconPlus className="w-5 h-5" />
-                  )}
-                </div>
-                {item.name === "Collections" && isHovered && (
-                  <div className="absolute top-8 p-2.5 bg-white rounded-md shadow-medium min-w-[300px] w-full">
+        ))}
+        {/* https://wa.me/916353757842?text=Hello I Have Tiles Related Inquiry! */}
+        <NavbarItem className="lg:ml-10 xl:ml-16">
+          <Button
+            className="btn btn-primary"
+            as={Link}
+            href="mailto:info@bhavyaquartz.com"
+            variant="flat"
+          >
+            Mail Inquiry
+          </Button>
+        </NavbarItem>
+          <NavbarItem className="">
+            <TranslateComponent />
+          </NavbarItem>
+      </NavbarContent>
+
+      {isMenuOpen && (
+        <>
+          <div
+            className="fixed top-[64px] inset-0 bg-black opacity-50 z-10 lg:hidden h-[calc(100dvh-64px)]"
+            onClick={closeMenu}
+          ></div>
+          <div
+            className={`lg:hidden z-30 px-4 fixed top-[64px] w-[300px] inset-y-0 left-0 flex-col gap-2 overflow-y-auto backdrop-blur-xl backdrop-saturate-150 h-[calc(100dvh-64px)] bg-[#0D121E] text-white transition-transform duration-300 ${
+              isMenuOpen && !isExiting
+                ? "transform translate-x-0"
+                : "transform -translate-x-full"
+            } ${isExiting ? "transform -translate-x-full" : ""}`}
+          >
+            <div>
+              {menuItems.map((item, index) => {
+                if (item.name !== "Collections") {
+                  return (
+                    <Link
+                      key={index}
+                      className={`px-2 py-2.5 border-b border-white/10 block ${
+                        pathname === item.url ? "text-white underline" : ""
+                      }`}
+                      href={item.url}
+                      onClick={closeMenu}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                }
+                return null;
+              })}
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className="border-b-0">
+                  <AccordionTrigger className="px-2 py-2.5">
+                    <Link href="/collections" onClick={closeMenu}>
+                      Collections
+                    </Link>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-2 py-2.5">
                     {collectioItems.map((subItem, subIndex) => (
                       <Link
                         key={subIndex}
                         href={subItem.url}
+                        onClick={closeMenu}
                         className="px-4 py-2.5 block hover:bg-primary/20 rounded-md"
                       >
                         {subItem.name}
                       </Link>
                     ))}
-                  </div>
-                )}
-              </Link>
-            </NavbarItem>
-          ))}
-          <NavbarItem className="lg:ml-10 xl:ml-16">
-            <Button
-              className="btn btn-primary"
-              as={Link}
-              href="mailto:info@bhavyaquartz.com"
-              variant="flat"
-            >
-              Mail Inquiry
-            </Button>
-          </NavbarItem>
-          <NavbarItem className="">
-            <TranslateComponent />
-          </NavbarItem>
-        </NavbarContent>
-
-        {isMenuOpen && (
-          <>
-            <div
-              className="fixed top-[64px] inset-0 bg-black opacity-50 z-10 lg:hidden h-[calc(100dvh-64px)]"
-              onClick={closeMenu}
-            ></div>
-            <div
-              className={`lg:hidden z-30 px-4 fixed top-[64px] w-[300px] inset-y-0 left-0 flex-col gap-2 overflow-y-auto backdrop-blur-xl backdrop-saturate-150 h-[calc(100dvh-64px)] bg-[#0D121E] text-white transition-transform duration-300 ${
-                isMenuOpen && !isExiting
-                  ? "transform translate-x-0"
-                  : "transform -translate-x-full"
-              } ${isExiting ? "transform -translate-x-full" : ""}`}
-            >
-              <div>
-                {menuItems.map((item, index) => (
-                  <Link
-                    key={index}
-                    className={`px-2 py-2.5 border-b border-white/10 block ${
-                      pathname === item.url ? "text-white underline" : ""
-                    }`}
-                    href={item.url}
-                    onClick={closeMenu}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <Accordion type="single" collapsible>
-                  <AccordionItem value="item-1" className="border-b-0">
-                    <AccordionTrigger className="px-2 py-2.5">
-                      <Link href="/collections" onClick={closeMenu}>
-                        Collections
-                      </Link>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-2 py-2.5">
-                      {collectioItems.map((subItem, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          href={subItem.url}
-                          onClick={closeMenu}
-                          className="px-4 py-2.5 block hover:bg-primary/20 rounded-md"
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
-          </>
-        )}
-      </Navbar>
+          </div>
+        </>
+      )}
+    </Navbar>
     </>
   );
 }
