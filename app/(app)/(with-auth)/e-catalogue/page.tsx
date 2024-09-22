@@ -8,8 +8,7 @@ const steps = [
     title: "Bhavya",
     description: "Lorem ipsum",
     img: "/images/product-1.png",
-    pdfUrl:
-      "https://bhavyaquartz.com/Pdf-Files/Quartz Stone.pdf",
+    pdfUrl: "https://bhavyaquartz.com/Pdf-Files/Quartz Stone.pdf",
   },
 ];
 
@@ -35,11 +34,11 @@ const Catalogue = () => {
                   <img src={step.img} alt="images" />
                 </div>
               </div>
-              <div className="collection-product-details-content">
+              <div className="collection-product-details-content notranslate">
                 <p className="collection-product-sub-title-main">
                   {step.title}
                 </p>
-                <h3 className="collection-product-sub-title-sub">
+                <h3 className="collection-product-sub-title-sub notranslate">
                   <span>{step.description}</span>
                 </h3>
               </div>

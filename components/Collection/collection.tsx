@@ -428,11 +428,11 @@ export function Collection() {
                     /> */}
                   </div>
                 </div>
-                <div className="collection-product-details-content">
+                <div className="collection-product-details-content notranslate">
                   <p className="collection-product-sub-title-main">
                     {step.description}
                   </p>
-                  <h3 className="collection-product-sub-title-sub">
+                  <h3 className="collection-product-sub-title-sub notranslate">
                     <span>{step.title}</span>
                   </h3>
                 </div>

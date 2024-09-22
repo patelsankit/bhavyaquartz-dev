@@ -62,11 +62,11 @@ const ImageModal = ({ isOpen, onClose, steps, selectedImageIndex }: any) => {
                     />
                   </div>
                 </div>
-                <div className="collection-product-details-content !px-2 sm:!px-5">
+                <div className="collection-product-details-content !px-2 sm:!px-5 notranslate">
                   <p className="collection-product-sub-title-main">
                     {step.description}
                   </p>
-                  <h3 className="collection-product-sub-title-sub  !text-[14px] sm:!text-[18px]">
+                  <h3 className="collection-product-sub-title-sub  !text-[14px] sm:!text-[18px] notranslate">
                     <span>{step.title}</span>
                   </h3>
                 </div>

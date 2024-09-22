@@ -30,7 +30,7 @@ const Certificate = () => {
                   <img src={step.img} alt="images" />
                 </div>
               </div>
-              <div className="collection-product-details-content">
+              <div className="collection-product-details-content ">
                 <p className="collection-product-sub-title-main">
                   {step.title}
                 </p>
