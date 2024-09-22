@@ -190,18 +190,24 @@ export default function NavbarComponent() {
             } ${isExiting ? "transform -translate-x-full" : ""}`}
           >
             <div>
-              {menuItems.map((item, index) => (
-                <Link
-                  key={index}
-                  className={`px-2 py-2.5 border-b border-white/10 block ${
-                    pathname === item.url ? "text-white underline" : ""
-                  }`}
-                  href={item.url}
-                  onClick={closeMenu}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {menuItems.map((item, index) => {
+                // Only render the item if it's not "Collections"
+                if (item.name !== "Collections") {
+                  return (
+                    <Link
+                      key={index}
+                      className={`px-2 py-2.5 border-b border-white/10 block ${
+                        pathname === item.url ? "text-white underline" : ""
+                      }`}
+                      href={item.url}
+                      onClick={closeMenu}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                }
+                return null; // Skip rendering "Collections" here
+              })}
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1" className="border-b-0">
                   <AccordionTrigger className="px-2 py-2.5">
