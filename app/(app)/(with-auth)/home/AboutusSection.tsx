@@ -3,16 +3,10 @@ import React from "react";
 const AboutusSection = () => {
   return (
     <>
-      <section className="about-three relative overflow-hidden py-12 sm:py-20 lg:py-32 px-2 sm:px-5">
+      <section className="about-three relative overflow-hidden pb-6 sm:pb-20 lg:pb-32 py-12 sm:py-20 lg:py-32 px-2 sm:px-5">
         <div className="about-three__shape-5">
           <img src="images/about-three-shape-5.png" alt="image" />
         </div>
-        {/* <div className="about-three__shape-3 float-bob-x">
-          <img src="images/about-three-shape-3.png" alt="image" />
-        </div> */}
-        {/* <div className="about-three__shape-4 float-bob-y">
-            <img src="images/about-three-shape-4.png" alt="image" />
-          </div> */}
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4">
             <div className="order-1 lg:order-2">
@@ -34,12 +28,6 @@ const AboutusSection = () => {
                       YEARS OF <br /> EXPERIENCES
                     </p>
                   </div>
-                  {/* <div className="about-three__shape-1 zoominout">
-                    <img src="images/logo-dimond.png" alt="image" />
-                  </div>
-                  <div className="about-three__shape-2 float-bob-y">
-                    <img src="images/about-three-shape-2.png" alt="image" />
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -53,7 +41,7 @@ const AboutusSection = () => {
                   </div>
                   <h2 className="section-title-three__title">
                     Bhavya is One of The
-                    <br /> Best Quartz Stone Company
+                    <br className="hidden sm:block" /> Best Quartz Stone Company
                   </h2>
                 </div>
                 <p className="about-three__text-1">

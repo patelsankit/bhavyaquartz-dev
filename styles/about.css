@@ -97,14 +97,13 @@
 }
 
 .section-title-three__title {
-  @apply text-32 sm:text-44 sm:leading-[52px];
+  @apply text-28 sm:text-32 md:text-44 sm:leading-[52px];
   margin: 0;
   color: var(--bixola-black);
   font-weight: 700;
   margin-top: 11px;
   font-family: var(--bixola-font-two);
   text-transform: capitalize;
-
 }
 .about-three__experience-count span {
   color: var(--bhavya-white);
@@ -160,10 +159,9 @@
 }
 
 .about-three__text-1 {
+  @apply text-16 sm:text-20 sm:leading-8;
   position: relative;
-  font-size: 20px;
   font-weight: 500;
-  line-height: 35px;
   color: var(--bhavya-black);
   padding-left: 15px;
 }

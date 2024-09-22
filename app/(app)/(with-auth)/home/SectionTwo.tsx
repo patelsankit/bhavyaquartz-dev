@@ -21,7 +21,9 @@ const SectionTwo = () => {
             <div className="space-y-2">
               <h1 className="z-20 relative text-30 font-600 tracking-tighter sm:text-36 md:text-40 lg:text-48">
                 Make Your Home{" "}
-                <Highlight className="z-20 text-white">Attractive</Highlight>
+                <Highlight className="z-20 text-white p-1.5 px-3">
+                  Attractive
+                </Highlight>
               </h1>
               <p className="z-20 relative max-w-[600px] text-white/80 md:text-16 lg:text-18 xl:text-20">
                 We are one of the most leading companies in the manufacture and

@@ -58,7 +58,7 @@ const ImageModal = ({ isOpen, onClose, steps, selectedImageIndex }: any) => {
                       onClick={handleImageClick}
                       src={step.img}
                       alt={step.title}
-                      className="rounded-lg max-h-[calc(100vh-80px)] object-contain mx-auto h-full"
+                      className="rounded-lg max-h-[calc(100vh-80px)] sm:object-contain mx-auto sm:h-full h-[400px] object-cover"
                     />
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const ImageModal = ({ isOpen, onClose, steps, selectedImageIndex }: any) => {
                   <p className="collection-product-sub-title-main">
                     {step.description}
                   </p>
-                  <h3 className="collection-product-sub-title-sub  !text-[18px] sm:!text-[22px]">
+                  <h3 className="collection-product-sub-title-sub  !text-[14px] sm:!text-[18px]">
                     <span>{step.title}</span>
                   </h3>
                 </div>
