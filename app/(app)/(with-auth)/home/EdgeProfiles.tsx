@@ -1,17 +1,56 @@
+import { useEffect, useRef, useState } from "react";
+
 const EdgeProfiles = () => {
+  const [animate, setAnimate] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setAnimate(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   return (
-    <section className="about-three relative overflow-hidden py-12 sm:py-20 lg:py-20 px-2 sm:px-5">
+    <section
+      ref={sectionRef}
+      className="about-three relative overflow-hidden py-12 sm:py-20 lg:py-20 px-2 sm:px-5"
+    >
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4">
           <div className="order-1">
             <div className="about-three__left !mr-0 lg:!mr-[86px]">
-              <div className="about-three__img wow slideInLeft animated">
+              <div
+                className={`about-three__img ${
+                  animate ? "animate-fade-zoom" : ""
+                }`}
+              >
                 <img src="images/size.png" alt="image" />
               </div>
             </div>
           </div>
           <div className="order-2">
-            <div className="about-three__right">
+            <div
+              className={`about-three__right ${
+                animate ? "animate-slide-bottom" : ""
+              }`}
+            >
               <div className="section-title-three text-left">
                 <div className="section-title-three__tagline-box">
                   <p className="section-title-three__tagline text-primary">
@@ -28,10 +67,10 @@ const EdgeProfiles = () => {
               <p className="about-three__text-2">
                 The unique properties and durability of keros stone quartz
                 surfaces allow for a wide range of edge profile design options.
-                Many edge profiles are possible,from a standard edge to
+                Many edge profiles are possible, from a standard edge to
                 laminated or mitered edges which create the appearance of a
                 thicker slab. All edge details should have a minimum 1/8 radius
-                on anyprofile, for both top and bottom edges. For high-traffic
+                on any profile, for both top and bottom edges. For high-traffic
                 areas, 1/4 minimum radius is suggested.
               </p>
               <p className="about-three__text-2">Available Thickness</p>
