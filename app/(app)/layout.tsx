@@ -45,8 +45,6 @@ export default function Layout({ children }: any) {
         <Toaster position="top-right" reverseOrder={false} />
         <CustomCursor />
         <NavbarComponent />
-
-        <TranslateComponent />
         {children}
         <FooterComponent />
         <GotoTop />

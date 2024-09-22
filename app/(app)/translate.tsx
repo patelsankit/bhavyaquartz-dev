@@ -1,6 +1,30 @@
-import React, { useEffect } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/Dropdown";
+import { IconWorld } from "@tabler/icons-react";
+import React, { useEffect, useState } from "react";
+
+const languages = {
+  en: "English",
+  es: "Spanish",
+  fr: "French",
+  de: "German",
+  it: "Italian",
+  ja: "Japanese",
+  ko: "Korean",
+  "zh-CN": "Chinese (Simplified)",
+  hi: "Hindi",
+  th: "Thai",
+};
 
 const TranslateComponent = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
+
   useEffect(() => {
     const clearGoogleTranslateStorage = () => {
       localStorage.removeItem("googtrans");
@@ -22,8 +46,9 @@ const TranslateComponent = () => {
         window.googleTranslateElementInit = function () {
           new window.google.translate.TranslateElement(
             {
-              pageLanguage: "en", // Set the default page language to English
-              includedLanguages: "en,es,fr,de,it,ja,ko,zh-CN,hi,th", // Include only these 10 languages
+              pageLanguage: "en",
+              includedLanguages: Object.keys(languages).join(","),
+              autoDisplay: false,
             },
             "google_translate_element"
           );
@@ -41,9 +66,48 @@ const TranslateComponent = () => {
     addGoogleTranslateScript();
   }, []);
 
+  useEffect(() => {
+    const changeLanguage = (lang) => {
+      const googleTranslateSelect = document.querySelector(".goog-te-combo");
+      if (googleTranslateSelect) {
+        googleTranslateSelect.value = lang;
+        googleTranslateSelect.dispatchEvent(new Event("change"));
+      }
+    };
+
+    changeLanguage(selectedLanguage);
+  }, [selectedLanguage]);
+
+  const handleLanguageChange = (lang) => {
+    setSelectedLanguage(lang);
+  };
+
   return (
     <>
-      <div id="google_translate_element"></div>
+      <DropdownMenu>
+        <DropdownMenuTrigger className="btn btn-primary py-1.5 px-2 sm:px-2.5 rounded-md sm:rounded-medium ab-solute right-16 top-3 h-8 sm:h-10 z-[999] flex gap-1.5 items-center focus-visible:outline-none notranslate">
+          <IconWorld className="h-4 sm:h-5 w-4 sm:w-5" />
+          {/* {languages[selectedLanguage]} */}
+          {selectedLanguage}
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="z-[999] !p-0 font-inter">
+          <DropdownMenuLabel className="!text-14">
+            Select Language
+          </DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          {Object.entries(languages).map(([code, name]) => (
+            <DropdownMenuItem
+              className="notranslate hover:bg-primary/30 !text-14"
+              key={code}
+              onClick={() => handleLanguageChange(code)}
+            >
+              {name}
+            </DropdownMenuItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+
+      <div id="google_translate_element" style={{ display: "none" }}></div>
     </>
   );
 };
