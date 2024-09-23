@@ -14,31 +14,16 @@ export function Collection() {
   const [activeTab, setActiveTab] = useState("All");
 
   const steps = [
-    // Basic Series
+    // Plain Colours
     {
-      title: "Crystal Blue",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Crystal Blue.webp",
+      title: "Pure black",
+      description: "Plain Colours",
+      img: "/images/product/plain-colours/Pure black.jpg",
     },
     {
-      title: "Crystal Light Grey",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Crystal Light Grey.webp",
-    },
-    {
-      title: "Crystal red",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Crystal red.webp",
-    },
-    {
-      title: "Crystal-White",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Crystal-White.webp",
-    },
-    {
-      title: "Ice White",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Ice White.webp",
+      title: "Pure White",
+      description: "Plain Colours",
+      img: "/images/product/plain-colours/Pure White.jpg",
     },
     // Calacatta Series
     {
@@ -320,17 +305,6 @@ export function Collection() {
       description: "Multi Exotic Series",
       img: "/images/product/multi-exotic-series/vanila black.jpg",
     },
-    // Plain Colours
-    {
-      title: "Pure black",
-      description: "Plain Colours",
-      img: "/images/product/plain-colours/Pure black.jpg",
-    },
-    {
-      title: "Pure White",
-      description: "Plain Colours",
-      img: "/images/product/plain-colours/Pure White.jpg",
-    },
     // Satuario Series
     {
       title: "Calacatta Costta (Grey) 2",
@@ -351,6 +325,32 @@ export function Collection() {
       title: "Natural Satuario",
       description: "Satuario Series",
       img: "/images/product/satuario-series/Natural Satuario.jpg",
+    },
+    // Basic Series
+    {
+      title: "Crystal Blue",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Crystal Blue.webp",
+    },
+    {
+      title: "Crystal Light Grey",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Crystal Light Grey.webp",
+    },
+    {
+      title: "Crystal red",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Crystal red.webp",
+    },
+    {
+      title: "Crystal-White",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Crystal-White.webp",
+    },
+    {
+      title: "Ice White",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Ice White.webp",
     },
   ];
 
@@ -389,7 +389,7 @@ export function Collection() {
           <div className="overflow-auto w-full pb-1">
             <TabsList>
               <TabsTrigger value="All">All</TabsTrigger>
-              <TabsTrigger value="BasicSeries">Basic Series</TabsTrigger>
+              <TabsTrigger value="PlainColours">Plain Colours</TabsTrigger>
               <TabsTrigger value="CalacattaSeries">
                 Calacatta Series
               </TabsTrigger>
@@ -401,8 +401,8 @@ export function Collection() {
               <TabsTrigger value="MultiExoticSeries">
                 Multi Exotic Series
               </TabsTrigger>
-              <TabsTrigger value="PlainColours">Plain Colours</TabsTrigger>
               <TabsTrigger value="SatuarioSeries">Satuario Series</TabsTrigger>
+              <TabsTrigger value="BasicSeries">Basic Series</TabsTrigger>
             </TabsList>
           </div>
 

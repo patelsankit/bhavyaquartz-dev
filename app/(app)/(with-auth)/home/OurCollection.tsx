@@ -1,14 +1,16 @@
+import ImageModal from "@/components/ImageModel/image-model";
 import LogoFloating from "@/components/LogoFloating";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export function OurCollection() {
   const steps = [
     {
       number: "01",
       title: "Bhavya",
-      description: "Basic Series",
-      img: "/images/product/basic-series/Crystal Blue.webp",
+      description: "Plain Colours",
+      img: "/images/product/plain-colours/Pure White.jpg",
     },
     {
       number: "02",
@@ -43,16 +45,32 @@ export function OurCollection() {
     {
       number: "07",
       title: "Bhavya",
-      description: "Plain Colours",
-      img: "/images/product/plain-colours/Pure White.jpg",
+      description: "Satuario Series",
+      img: "/images/product/satuario-series/CalacattaCostta.jpg",
     },
     {
       number: "08",
       title: "Bhavya",
-      description: "Satuario Series",
-      img: "/images/product/satuario-series/CalacattaCostta.jpg",
+      description: "Basic Series",
+      img: "/images/product/basic-series/Crystal Blue.webp",
     },
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
+
+  const openModal = (index: number) => {
+    setSelectedImageIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImageIndex(null);
+  };
+
   return (
     <div className="bg-[#F7F9FA] py-8 sm:py-12 lg:py-20 relative pb-16 sm:pb-20 lg:pb-32">
       <LogoFloating className="hidden lg:block absolute w-20 img-bounce-speed top-44 left-5" />
@@ -67,10 +85,10 @@ export function OurCollection() {
       </div>
       <div className="max-w-7xl container px-4 lg:px-7 mt-4 lg:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-10 !gap-y-20">
-          {steps.map((step) => (
+          {steps.map((step,index) => (
             <div key={step.number} className="collection-product-details">
               <div className="collection-product-details-box h-full">
-                <div className="collection-product-details-img h-full">
+                <div className="collection-product-details-img h-full" onClick={() => openModal(index)}>
                   <img src={step.img} alt="image" className="h-full" />
                   {/* <Image
                     src={step.img}
@@ -93,6 +111,14 @@ export function OurCollection() {
           ))}
         </div>
       </div>
+      {isModalOpen && selectedImageIndex !== null && (
+        <ImageModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          steps={steps}
+          selectedImageIndex={selectedImageIndex}
+        />
+      )}
     </div>
   );
 }
