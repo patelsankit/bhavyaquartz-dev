@@ -41,7 +41,7 @@ const EdgeProfiles = () => {
                   animate ? "animate-fade-zoom" : ""
                 }`}
               >
-                <img src="images/size.png" alt="image" />
+                <img src="images/size.webp" alt="image" />
               </div>
             </div>
           </div>
