@@ -6,7 +6,11 @@ import Counter from "@/components/counter/counter";
 export default function About() {
   return (
     <div className="">
-      <Banner title="ABOUT US" imageSrc="/images/contact-us-banner-min.webp" />
+      <Banner
+        title="ABOUT US"
+        imageClass="max-h-full"
+        imageSrc="/images/banner-image-6.webp"
+      />
       {/* About Section */}
       <div className="container mx-auto px-4 py-8">
         <section className="flex flex-col md:flex-row items-center lg:mb-8">

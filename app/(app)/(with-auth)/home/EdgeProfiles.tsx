@@ -76,25 +76,13 @@ const EdgeProfiles = () => {
               <p className="about-three__text-2">Available Thickness</p>
               <ul className="about-three__points list-unstyled">
                 <li>
-                  <img
-                    src="https://evetis.in/assets/images/home_page/30_mm.png"
-                    width="160px"
-                    alt=""
-                  />
+                  <img src="/images/30_mm.png" width="160px" alt="" />
                 </li>
                 <li>
-                  <img
-                    src="https://evetis.in/assets/images/home_page/30_mm.png"
-                    width="160px"
-                    alt=""
-                  />
+                  <img src="/images/20_mm.png" width="160px" alt="" />
                 </li>
                 <li>
-                  <img
-                    src="https://evetis.in/assets/images/home_page/30_mm.png"
-                    width="160px"
-                    alt=""
-                  />
+                  <img src="/images/15_mm.png" width="160px" alt="" />
                 </li>
               </ul>
             </div>

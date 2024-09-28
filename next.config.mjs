@@ -12,9 +12,9 @@ const nextConfig = {
   //     ]
   //   }
   // },
-  images: {
-    domains: ["www.pngkey.com", "assets.aceternity.com"],
-  },
+  // images: {
+  //   domains: ["www.pngkey.com", "assets.aceternity.com"],
+  // },
 };
 
 export default nextConfig;

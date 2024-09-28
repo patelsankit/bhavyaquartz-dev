@@ -199,7 +199,8 @@ const TechnicalSpecification = () => {
     <section className="bg-gray-100">
       <Banner
         title="TECHNICAL SPECIFICATION"
-        imageSrc="/images/contact-us-banner-min.webp" // Adjust the path as needed
+        imageSrc="/images/banner-image-1.webp"
+        // imageClass="max-h-full"
       />
       <div className="px-4 pt-7 container 2xl:max-w-[1300px]">
         <div className="text-center mb-5">

@@ -1,7 +1,7 @@
 // components/Banner.js
 import PropTypes from "prop-types";
 
-const Banner = ({ title, imageSrc }: any) => {
+const Banner = ({ title, imageSrc, imageClass }: any) => {
   return (
     <div className="relative">
       <div className="absolute top-0 h-full w-full bg-black/70 flex items-center justify-center">
@@ -10,7 +10,7 @@ const Banner = ({ title, imageSrc }: any) => {
         </h1>
       </div>
       <img
-        className="max-h-[calc(100vh-200px)] min-h-[200px] sm:min-h-[550px] w-full"
+        className={`max-h-[calc(100vh-200px)] min-h-[200px] sm:min-h-[550px] w-full ${imageClass}`}
         src={imageSrc}
         alt="Banner Image"
       />
@@ -21,6 +21,7 @@ const Banner = ({ title, imageSrc }: any) => {
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
+  imageClass: PropTypes.string,
 };
 
 export default Banner;
