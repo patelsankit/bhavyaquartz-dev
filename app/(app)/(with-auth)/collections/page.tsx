@@ -7,7 +7,7 @@ const Collections = () => {
       <Banner
         title="ALL COLLECTIONS"
         imageSrc="/images/banner-image-2.webp"
-        imageClass="max-h-full"
+        imageClass="max-h-[calc(100vh-220px)] object-cover"
       />
       <Collection />
     </section>
