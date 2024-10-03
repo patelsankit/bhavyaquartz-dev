@@ -8,7 +8,7 @@ export default function About() {
     <div className="">
       <Banner
         title="ABOUT US"
-        imageClass="max-h-full"
+        imageClass="max-h-[calc(100vh-220px)] object-cover"
         imageSrc="/images/banner-image-6.webp"
       />
       {/* About Section */}
